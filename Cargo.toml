@@ -1,0 +1,23 @@
+[package]
+name = "cs2-cheat-in-rust"
+version = "0.1.0"
+edition = "2021"
+
+[build-dependencies]
+winres = "0.1.12"
+
+
+[target.'cfg(target_arch = "x86_64")']
+rustflags = ["-C", "target-feature=+crt-static"]
+
+[dependencies]
+toy-arms = {git = "https://github.com/pseuxide/toy-arms", features = ["external"]}
+im = "15.1.0"
+crossbeam = "0.8.4"
+lazy_static = "1.4"
+once_cell = "1.10.0"
+egui = "0.27.2"
+eframe = "0.27.2"
+kernel-build = "0.1.0"
+
+
