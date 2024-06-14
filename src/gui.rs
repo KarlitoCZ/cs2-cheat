@@ -49,7 +49,7 @@ impl eframe::App for MyApp {
             
                 let (names, money) = money_service_request();
                 for (name, plr_money) in names.iter().zip(money.iter()) {
-                    ui.label(format!("{} : {}$", name, plr_money));
+                    ui.label(format!("{} : ${}", name, plr_money));
                 }
             });
             
