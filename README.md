@@ -7,7 +7,6 @@ For this project i used the toy arms crate, but you can use the win32 crate as w
 Go to offsets.rs in the src folder and get your offsets from cs2-dumper
 
 # How to build
-Open your terminal in the project folder and type : cargo build --release 
-and your done.
+Open your terminal in the project folder and type : cargo build --release
 
 This project won't be supported or updated this is just a basic example.
